@@ -1,9 +1,22 @@
 {
+  "name": "whatsapp-receiver",
+  "version": "1.0.0",
+  "description": "WhatsApp receiver using Node.js, Express, Twilio, and Socket.IO",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "engines": {
+    "node": ">=14.x",
+    "npm": ">=6.x"
+  },
   "dependencies": {
     "dotenv": "^16.4.5",
     "express": "^4.21.1",
     "socket.io": "^4.8.1",
     "twilio": "^5.3.5",
     "uuid": "^11.0.2"
-  }
+  },
+  "author": "",
+  "license": "ISC"
 }
