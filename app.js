@@ -45,7 +45,7 @@ app.post('/webhook', (req, res) => {
     console.log('Chat ID:', chatId);
     console.log('Sender ID:', senderId);
     console.log('Message:', messageText);
-    
+
 
   // Emit the message to any WebSocket listeners
   io.emit('new_message', { text: messageText, senderId: senderId, id: chatId });
@@ -93,7 +93,7 @@ async function sendWhatsAppMessage(to, text) {
 }
 
 // Start the server
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3000;
 server.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
